@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruvi Patel — Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="nav-inner">
+      <div class="brand">Dhruvi Patel</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <span class="intro-sub reveal">Full-Stack Developer</span>
+        <h1 class="hero-title reveal">Hi — I’m <span class="gradient">Dhruvi Patel</span><br />Programmer & Full-Stack Developer</h1>
+
+        <p class="hero-desc reveal">
+          I build modern, responsive web apps using HTML, CSS, JavaScript — and backend technologies like PHP & MySQL.  
+          I love turning ideas into clean, maintainable code and delightful user experiences.
+        </p>
+
+        <div class="cta-row reveal">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+
+        <div class="cta-row reveal">
+          <a href="2jpg resume dhruvi.jpg" download class="btn">Download Resume</a>
+          <a href="portfolio-dhruvi.zip" download class="btn secondary">Download Portfolio</a>
+        </div>
+      </div>
+
+      <div class="hero-img reveal">
+        <img src="https://cdn.pixabay.com/photo/2018/01/10/07/14/woman-3077534_1280.jpg" alt="Woman working on laptop" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="container section">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <div class="section-sub">Full-Stack Developer | PHP | MySQL | UI/UX</div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <p>
+          I'm <strong>Dhruvi Patel</strong>, an IT student and passionate <strong>Full-Stack Developer</strong>.  
+          I build web applications using HTML, CSS, JavaScript for the frontend and PHP + MySQL for the backend.  
+          I also enjoy UI/UX design and creating responsive, high-performance interfaces.
+        </p>
+
+        <ul class="info-list">
+          <li><strong>Email:</strong> workdhruvi123@gmail.com</li>
+          <li><strong>Location:</strong> India</li>
+          <li><strong>Skills:</strong> HTML, CSS, JavaScript, PHP, MySQL, UI/UX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="container section">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <div class="section-sub">Some of my recent work</div>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project reveal">
+        <div class="thumb">Placement Website</div>
+        <h4>Placement Website</h4>
+        <p>University portal built with PHP, MySQL, HTML & JS.</p>
+      </article>
+
+      <article class="project reveal">
+        <div class="thumb">Figma Designs</div>
+        <h4>Figma Designs</h4>
+        <p>UI/UX prototypes and design systems for web and mobile.</p>
+      </article>
+
+      <article class="project reveal">
+        <div class="thumb">My Portfolio</div>
+        <h4>My Portfolio</h4>
+        <p>Personal dark-themed portfolio showcasing my skills and projects.</p>
+      </article>
+
+      <article class="project reveal">
+        <div class="thumb">General Website</div>
+        <h4>General Website</h4>
+        <p>Responsive business landing pages with modern design and SEO.</p>
+      </article>
+
+      <article class="project reveal">
+        <div class="thumb">UI/UX Design</div>
+        <h4>UI/UX Design</h4>
+        <p>Creative wireframes and interactive mockups in Figma.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="container section">
+    <div class="section-title">
+      <h2>Contact Me</h2>
+      <div class="section-sub">Let’s build something together</div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <p>Email: <strong>workdhruvi123@gmail.com</strong></p>
+        <p>
+          GitHub: <a href="https://github.com/Techbt67/placement-projects" target="_blank">Techbt67</a><br />
+          LinkedIn: <a href="https://www.linkedin.com/in/dhruvi-kathrotiya-9b4b22299" target="_blank">Dhruvi Kathrotiya</a><br />
+          Instagram: <a href="https://www.instagram.com/inno_.hive007" target="_blank">@inno_.hive007</a>
+        </p>
+      </div>
+
+      <div class="contact-card reveal">
+        <form id="contactForm" onsubmit="return handleContactSubmit(event)">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          <div id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    &copy; 2025 Dhruvi Patel. All Rights Reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
